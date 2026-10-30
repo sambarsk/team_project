@@ -1,0 +1,42 @@
+.mainNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--border);
+    
+    .webBrand {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        
+    }
+    .webLogo,
+    .webTitle h1,
+    .webTitle h2 {
+        margin: 0.3rem;
+    }
+    
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        a {
+            color: var(--social-h);
+            font-weight: 500;
+            font-size: 16px;
+            border-radius: 6px;
+            background: var(--social-bg);
+            display: flex;
+            padding: 12px 18px;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            transition: box-shadow 0.3s;
+
+            &:hover {
+                box-shadow: var(--shadow);
+            }
+        }
+    }
+}
