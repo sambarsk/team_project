@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { Link } from 'react-router-dom'
+
 import './Navbar.css'
 
 function Navbar(){
@@ -12,14 +13,11 @@ function Navbar(){
                 </div>
             </div>
             <nav>
-                <a href="App.jsx">Domov</a>
-                <a href="/experiences">Skúsenosti</a>
-                <a href="/submit">Pridať skúsenosť</a>
+                <Link to="/">Domov</Link>
+                <Link to="/experiences">Skúsenosti</Link>
             </nav>
         </header>
     )
-
-
 }
 
 export default Navbar

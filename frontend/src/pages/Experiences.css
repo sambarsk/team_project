@@ -1,0 +1,29 @@
+.experiencesContainer{
+  display:flex;
+  flex:1;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+
+  .searchExp{
+    background: var(--social-bg);
+  }
+  .addExp{
+    background: #068d59;
+  }
+
+  a {
+    color: var(--social-h);
+    font-weight: 400;
+    font-size: 40px;
+    border-radius: 12px;
+    display: flex;
+    padding: 24px 60px;
+    text-decoration: none;
+    transition: box-shadow 0.3s;
+
+    &:hover {
+      box-shadow: var(--shadow);
+    }
+  }
+}

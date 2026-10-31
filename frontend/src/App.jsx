@@ -1,21 +1,27 @@
 import { useState } from 'react'
-import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+import './App.css'
 import Navbar from './components/navbar/Navbar'
 
+import Home from './pages/Home'
+import Experiences from './pages/Experiences'
+import ExperiencesSearch from './pages/ExperiencesSearch'
+import ExperiencesForm from './pages/ExperiencesForm'
+
+// este mozme pridat stranku O Nas, ale to az na konci projektu
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <main className="homeContainer">
-        <h2>Ako dostupná je zdravotná starostlivosť?</h2>
-        <p>
-          Zdieľajte svoje skúsenosti s čakacími dobami
-          a poplatkami za zdravotnú starostlivosť.
-        </p>
-        <button>Pridať skúsenosť</button>
-      </main>
-    </>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/experiences" element={<Experiences />} />
+        <Route path="/experiences/search" element={<ExperiencesSearch />} />
+        <Route path="/experiences/add" element={<ExperiencesForm />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

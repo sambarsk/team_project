@@ -1,15 +1,14 @@
 .mainNavbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
     padding: 1rem 2rem;
     border-bottom: 1px solid var(--border);
     
     .webBrand {
         display: flex;
         align-items: center;
-        gap: 0.75rem;
-        
+        gap: 0.75rem;   
     }
     .webLogo,
     .webTitle h1,
@@ -18,8 +17,10 @@
     }
     
     nav {
+        margin-left: 150px;
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 1.5rem;
         a {
             color: var(--social-h);
@@ -28,9 +29,7 @@
             border-radius: 6px;
             background: var(--social-bg);
             display: flex;
-            padding: 12px 18px;
-            align-items: center;
-            gap: 8px;
+            padding: 12px 25px;
             text-decoration: none;
             transition: box-shadow 0.3s;
 
